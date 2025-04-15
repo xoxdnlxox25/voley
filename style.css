@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team {
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.green-card {
+  background: #2ecc71;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.green-card:hover {
+  transform: scale(1.03);
+}
+
+.team h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.points {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.sets {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.last-updated {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}
