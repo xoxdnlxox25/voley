@@ -27,16 +27,23 @@ h1 {
   text-align: center;
   width: 250px;
   transition: all 0.3s ease;
-}
-
-.green-card {
-  background: #2ecc71;
   color: white;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.green-card:hover {
-  transform: scale(1.03);
+.red-card {
+  background-color: #e74c3c;
+}
+
+.blue-card {
+  background-color: #3498db;
+}
+
+.label {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .team h2 {
@@ -54,8 +61,15 @@ h1 {
   font-size: 1.2rem;
 }
 
+.periodo-display {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
 .last-updated {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 0.9rem;
   color: #888;
 }
