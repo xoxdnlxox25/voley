@@ -9,18 +9,24 @@
 <body>
 
   <h1>🏐 Marcador de Vóley en Vivo</h1>
+
   <div class="scoreboard">
-    <div class="team green-card">
+    <div class="team red-card">
+      <div class="label">LOCAL</div>
       <h2 id="teamA">Equipo A</h2>
       <div class="points" id="scoreA">0</div>
-      <div class="sets">Sets: <span id="setsA">0</span></div>
+      <div class="sets">SET: <span id="setsA">0</span></div>
     </div>
-    <div class="team green-card">
+
+    <div class="team blue-card">
+      <div class="label">VISITA</div>
       <h2 id="teamB">Equipo B</h2>
       <div class="points" id="scoreB">0</div>
-      <div class="sets">Sets: <span id="setsB">0</span></div>
+      <div class="sets">SET: <span id="setsB">0</span></div>
     </div>
   </div>
+
+  <div class="periodo-display">PERIODO: <span id="periodo">1</span></div>
 
   <div class="last-updated" id="lastUpdated">Última actualización: --</div>
 
