@@ -9,10 +9,11 @@ async function fetchScores() {
 
     document.getElementById('teamA').textContent = values[0];
     document.getElementById('teamB').textContent = values[1];
-    document.getElementById('scoreA').textContent = values[2];
-    document.getElementById('scoreB').textContent = values[3];
+    document.getElementById('scoreA').textContent = values[2].padStart(2, '0');
+    document.getElementById('scoreB').textContent = values[3].padStart(2, '0');
     document.getElementById('setsA').textContent = values[4];
     document.getElementById('setsB').textContent = values[5];
+    document.getElementById('periodo').textContent = values[6];
     document.getElementById('lastUpdated').textContent = 'Última actualización: ' + new Date().toLocaleTimeString();
   } catch (err) {
     console.error("Error al cargar los datos", err);
@@ -20,4 +21,4 @@ async function fetchScores() {
 }
 
 fetchScores();
-setInterval(fetchScores, 5000);
+setInterval(fetchScores, 3000);
