@@ -12,23 +12,32 @@ body {
 h1 {
   color: #2ecc71;
   margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 .scoreboard {
   display: flex;
-  gap: 40px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .team {
+  flex: 1 1 280px;
+  max-width: 320px;
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px;
   text-align: center;
-  width: 250px;
-  transition: all 0.3s ease;
   color: white;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.team:hover {
+  transform: scale(1.02);
 }
 
 .red-card {
@@ -41,18 +50,17 @@ h1 {
 
 .label {
   font-size: 1rem;
-  color: white;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .team h2 {
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .points {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -66,10 +74,35 @@ h1 {
   font-size: 1.3rem;
   color: #2ecc71;
   font-weight: bold;
+  text-align: center;
 }
 
 .last-updated {
   margin-top: 10px;
   font-size: 0.9rem;
   color: #888;
+  text-align: center;
+}
+
+/* ✅ Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .points {
+    font-size: 3rem;
+  }
+
+  .team h2 {
+    font-size: 1.2rem;
+  }
+
+  .sets, .label {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .periodo-display {
+    font-size: 1.1rem;
+  }
 }
